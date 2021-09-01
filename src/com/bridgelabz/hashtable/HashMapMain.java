@@ -16,6 +16,8 @@ public class HashMapMain {
 		Integer frequency  = myHashMap.get("paranoid");
 		System.out.println(myHashMap);
 		System.out.println("the word \"paranoid\" is repeated :"+frequency+" times");
+		
+		myHashMap.remove("avoidable");
 	}
 
 }
