@@ -3,7 +3,8 @@ package com.bridgelabz.hashtable;
 public class HashMapMain {
 
 	public static void main(String[] args) {
-		String sentence = "To be or not to be";
+		String sentence = "Paranoids are not paranoid because they are paranoid but "+"beacuse they keep putting themselves deliberately into "
+							+"paranoid avoidable situations";
 		MyHashMap<String, Integer> myHashMap = new MyHashMap<String, Integer>();
 		String [] words = sentence.toLowerCase().split(" ");	
 		for( String word : words) {
@@ -12,9 +13,9 @@ public class HashMapMain {
 			else value  = value+1;
 			myHashMap.add(word, value);
 		}
-		Integer frequency  = myHashMap.get("to");
+		Integer frequency  = myHashMap.get("paranoid");
 		System.out.println(myHashMap);
-		System.out.println("the word \"to\" is repeated :"+frequency+" times");
+		System.out.println("the word \"paranoid\" is repeated :"+frequency+" times");
 	}
 
 }
